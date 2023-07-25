@@ -1,0 +1,115 @@
+1. printf("\" Hello World \" ");
+2. printf("Hello World \t Hello World");
+3. printf("Hello World \n Hello world");
+4. int a;
+scanf("%d",&a);
+printf("%d",a);
+
+5.#include<stdio.h>
+int main()
+{
+    int a,b;
+    scanf("%d %d",&a,&b);
+    printf("%d",a+b);
+    return 0;
+}
+
+6. #include<stdio.h>
+int main()
+{
+    int age;
+    float cgpa;
+    char grade;
+    char  name[20];
+    scanf("%s\t%d\t%f\t%c",&name,&age,&cgpa,&grade);
+    printf("Name: %s\tAge: %d\tCGPA: %.2f\tGrade: %c",name,age,cgpa,grade);
+}
+
+7.#include<stdio.h>
+int main()
+{
+char c;
+scanf("%c",&c);
+printf("%d",c);
+}
+
+8.#include<stdio.h>
+int main()
+{
+char c;
+scanf("%d",&c);
+printf("%c",c);
+}			
+
+9.#include<stdio.h>
+#include<math.h>
+int main()
+{
+float f;
+scanf("%f",&f);
+printf("%.0f\t",f);
+printf("%.0f\t",ceil(f));
+printf("%.0f\t",floor(f));
+}
+
+10.#include<stdio.h>
+#include<math.h>
+int main()
+{
+    char name[2];
+    int age;
+    scanf("%s\t%d",&name,&age);
+    printf("%s age is %d ",name,age);
+}
+
+11.#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int l,b;
+    scanf("%d %d",&l,&b);
+    if(l>0 && b>0)
+    {
+        printf("The required length is %dm \n",(2*(l+b)));
+        printf("The required area of carpet is %dsqm",l*b);
+    }
+}
+
+12.#include<stdio.h>
+#include<math.h>
+int main()
+{
+ int a,b,c,d;
+ scanf("%d%d%d",&a,&b,&c);
+ d=(a*b)-(a*c)-100;
+ printf("%d",d);
+}
+
+14.#include<stdio.h>
+#include<math.h>
+int main()
+{
+int a,b;
+printf("a=");
+scanf("%d",&a);
+printf(",b=");
+scanf("%d",&b);
+printf("a=%d,b=%d",a,b);
+
+}
+
+15.
+int a,c;
+float b,d;
+scanf("%d%f",&a,&b);
+c=b;
+d=a;
+printf("A=%d and B=%.2f \t A=%d and B=%.2f",a,b,c,d);
+
+13.
+int a,b,c,n;
+    scanf("%d",&n);
+    a=(n/1)%10;
+    b=(n/1000)%10;
+    c=a+b;
+    printf("%d",c);
