@@ -1,0 +1,143 @@
+operators 
+
+    int a=20;
+    printf("%d ",a);
+    int b=((5>2)&&(a++));
+    printf("a= %d \t b= %d ",a,b);
+
+
+
+
+1.int main()
+{
+int a,b,c;
+scanf("%d %d %d",&a,&b,&c);
+printf("The result of a + b * c is %d ",a+(b*c));
+}
+
+2.int main()
+{
+int a,b,c;
+scanf("%d %d %d",&a,&b,&c);
+int d=((a>b)&&(a>c))?a:(b>c)?b:c;
+printf("%d",d);
+}
+
+3.#include<stdio.h>
+#include<math.h>
+int main()
+{
+int a ,b;
+printf("a=");
+scanf("%d",&a);
+printf("b=");
+scanf("%d",&b);
+printf("a= %d,",a*2);
+printf("b= %d",b-a);
+}
+
+3)
+int main()
+{
+int x,y,z;
+scanf("%d\t %d\t %d",&x,&y,&z);
+int c=(x&&y&&z++);
+printf("%d",c);
+}
+
+
+4)
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+int a ,b;
+printf("a=");
+scanf("%d",&a);
+printf("b=");
+scanf("%d",&b);
+a=a+b;
+b=a-b;
+a=a-b;
+printf("a= %d,",a);
+printf("b= %d",b);
+}
+
+5)int main()
+{
+int n,i;
+scanf("%d",&n);
+int m=(n*(n+1))/2;
+printf("The sum of the first %d natural numbers is %d ",n,m);
+}
+
+6)int main()
+{
+int a,b;
+scanf("%d\t%d",&a,&b);
+int c=a/b;
+int d=a%b;
+printf("The number of friends in each team is %d and left out is %d",c,d);
+}
+
+7)int main()
+{
+float i,t,d,f;
+float p,n,r;
+scanf("%f%f%f",&p,&n,&r);
+i=(p*n*r)/100;
+t=i+p;
+d=i*2/100;
+f=t-d;
+printf("%.2f\t%.2f\t%.2f\t%.2f",i,t,d,f);
+}
+
+8)int main()
+{
+int a,b,c,d;
+float x,y;
+scanf("%d%d%d%d",&a,&b,&c,&d);
+x=(float)(a+c)/2;
+y=(float)(b+d)/2;
+printf("%.1f\t%.1f",x,y);
+}
+
+
+9)int main()
+{
+int x,y;
+int a=3,b=4;
+scanf("%d%d",&x,&y);
+int c=sqrt(((x-a)*(x-a))+((y-b)*(y-b)));
+printf("%d",c);
+}
+
+10.int main()
+{
+int d1,c1,d2,c2;
+scanf("%d%d%d%d",&d1,&c1,&d2,&c2);
+int t,d,c;
+t=((d1*100)+c1+(d2*100)+c2);
+d=t/100;
+c=t%100;
+printf("%d/t%d",d,c);
+}
+
+
+11
+int main()
+{
+int x,y,z;
+scanf("%d%d%d",&x,&y,&z);
+int a,b,c;
+a=x*y/100;
+x=x-a;
+b=x*z/100;
+x=x-b;
+c=x/3;
+printf("%d\t%d\t%d",a,b,c);
+}
+
+
+
+    
