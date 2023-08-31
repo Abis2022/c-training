@@ -86,3 +86,24 @@ int main() {
 return 0;
 }
 
+7)#include<stdio.h>
+int main()
+{
+    int m,r,d;
+    scanf("%d%d%d",&m,&r,&d);
+    if((m>0)&&(m<=12)){
+        if((m>3)&&(m<=5)||(m==11)||(m==12)))
+        {
+            int rent=(r+(r*20/100))*d;
+              printf("%d",rent);
+        }
+        else{
+            int rent=(r*d);
+            
+        }
+    }
+    else{
+        printf("Invalid month");
+    }
+  
+}
