@@ -28,19 +28,19 @@ int main() {
 
 3)// Online C compiler to run C program online
 #include <stdio.h>
-
 int main() {
-    int n;
+    int n,m;
     scanf("%d",&n);
-    int b,c,d;
-    b=((n/1)%10);
-    c=((n/10)%10);
-    d=((n/100)%10);
-    printf("%d%d%d\t",b,c,d);
-
+    int t=0;
+    while(n>0){
+        m=n%10;
+        t=t*10+m;
+        n=n/10;
+    }
+    printf("%d",t);
     return 0;
 }
-}
+
 
 4)// Online C compiler to run C program online
 #include <stdio.h>
