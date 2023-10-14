@@ -171,3 +171,84 @@ else{
 printf("Not a Trendy Number");
 }
 }
+
+10
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int su,m,t,w,th,f,s;
+    int susal,msal,tsal,wsal,thsal,fsal,ssal;
+    scanf("%d%d%d%d%d%d",&su,&m,&t,&w,&th,&f,&s);
+    int sal=0;
+    if(su>0){
+        susal=su*100;
+        int a=susal*50/100;
+        susal=susal+a;
+        printf("%d",susal);
+        sal=sal+susal;
+    }
+    if(m>0 && m<9){
+        msal=m*100;
+        printf("%d",msal);
+        sal=sal+msal;
+    }else{
+        msal=8*100;
+        int f=msal+(msal-8)*15;
+        printf("%d",f);
+        sal=sal+f;
+    }
+
+      if(t>0 && t<9){
+        tsal=t*100;
+        printf("%d",tsal);
+        sal=sal+tsal;
+    }else{
+        tsal=8*100;
+        int b=tsal+(tsal-8)*15;
+        printf("%d",b);
+        sal=sal+b;
+    }
+    
+      if(w>0 && w<9){
+        wsal=w*100;
+        printf("%d",wsal);
+        sal=sal+wsal;
+    }else{
+        wsal=8*100;
+        int c=wsal+(wsal-8)*15;
+        printf("%d",c);
+        sal=sal+c;
+    }
+    
+      if(th>0 && th<9){
+        thsal=th*100;
+        printf("%d",thsal);
+        sal=sal+thsal;
+    }else{
+        thsal=8*100;
+        int d=thsal+(thsal-8)*15;
+        printf("%d",d);
+        sal=sal+d;
+    }
+      if(f>0 && f<9){
+        fsal=f*100;
+        printf("%d",fsal);
+        sal=sal+fsal;
+    }else{
+        thsal=8*100;
+        int g=fsal+(fsal-8)*15;
+        printf("%d",g);
+        sal=sal+g;
+    }
+    if(s>0){
+        ssal=s*100;
+        int e=susal*25/100;
+        ssal=ssal+e;
+        printf("%d",ssal);
+        sal=sal+ssal;
+    }
+    printf("\n%d",sal);
+
+    return 0;
+}
