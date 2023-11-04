@@ -1,0 +1,51 @@
+looping 
+
+1>
+#include <stdio.h>
+
+int main() {
+    int n,sum=0;
+    scanf("%d",&n);
+    for(int i=1;i<=n;i=i+2){
+        sum=sum+i;
+    }
+    printf("%d",sum);
+
+    return 0;
+}
+
+2>
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int n,sum=0;
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        if(i%2==0){
+        }
+        else{
+            sum=sum+i;
+        }
+    }
+    printf("%d",sum);
+
+    return 0;
+}
+
+3>
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int n,t,sum=0;
+    scanf("%d",&n);
+    while(n>0){
+        t=n%10;
+        sum=sum+t;
+        n=n/10;
+    }
+    printf("%d",sum);
+
+    return 0;
+}
