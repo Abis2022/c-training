@@ -131,3 +131,20 @@ int main() {
 
     return 0;
 }
+
+8#include <stdio.h>
+
+int main() {
+  int m,n,t,u,p;
+  scanf("%d%d",&n,&m);
+  for(int i=n;i<m;i++){
+    t=(i/1)%10;
+    u=(i/2)%10;
+    p=(t+u)+(t*u);
+    if(p==i){
+      printf("%d",i);
+    }
+  }
+  
+  return 0;
+}
