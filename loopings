@@ -87,3 +87,23 @@ int main() {
 
     return 0;
 }
+
+6>
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int n,m,sum=0;
+    scanf("%d%d",&n,&m);
+    printf("Enter %d\n",n);
+    printf("Enter %d\n",m);
+    printf("The multiplication of %d is \n",n);
+    for(int i=1;i<=m;i++)
+    {
+       printf("%d * %d = %d\n",i,n,(n*i));
+    }
+
+    return 0;
+}
+
+7>
