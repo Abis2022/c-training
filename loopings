@@ -132,18 +132,32 @@ int main() {
     return 0;
 }
 
-8#include <stdio.h>
-
-int main() {
-  int m,n,t,u,p;
-  scanf("%d%d",&n,&m);
-  for(int i=n;i<m;i++){
-    t=(i/1)%10;
-    u=(i/2)%10;
-    p=(t+u)+(t*u);
-    if(p==i){
-      printf("%d",i);
+8#include<stdio.h>
+int main()
+{
+int i,t;
+int n,m,sum=0,prod=1;
+scanf("%d%d",&n,&m);
+for(i=n;i<=m;i++)
+{
+    int a=i;
+    while(i>0){
+        t=i%10;
+        sum=sum+t;
+        prod=prod*t;
+        i=i/10;
     }
+    int total=sum+prod;
+    if(total==a){
+        printf("%d\n",a);
+    }
+sum=0;
+prod=1;
+i=a;
+}
+
+}
+
   }
   
   return 0;
