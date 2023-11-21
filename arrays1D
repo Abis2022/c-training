@@ -47,3 +47,29 @@ if(count==0){
     printf("The target value is not present in the array");
 }
 }
+
+3>#include<stdio.h>
+int main()
+{
+int n,i,j;
+scanf("%d",&n);
+int arr[n];
+for(i=0;i<n;i++){
+    scanf("%d",&arr[i]);
+}
+int count=1;
+for(i=0;i<n;i++){
+    for(j=i+1;j<n;j++){
+    if(arr[i]==arr[j] && arr[i]!=0){
+        count=count+1;
+        arr[j]=0;
+    }
+
+    }
+if(count>1)
+  printf("%d - %d\n",arr[i],count);
+    count=1;
+}
+}
+
+
