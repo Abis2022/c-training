@@ -1,1 +1,24 @@
 1
+#include<stdio.h>
+int main()
+{
+int n,i;
+scanf("%d",&n);
+int arr[n];
+for(i=0;i<n;i++){
+    scanf("%d",&arr[i]);
+}
+int k;
+int count=0;
+scanf("%d",&k);
+for(i=0;i<n;i++){
+    if(arr[i]==k){
+        printf("Yes,The element exists");
+        count=1;
+    }
+
+}
+if(count==0){
+    printf("No, The element does not exist");
+}
+}
